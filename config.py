@@ -51,10 +51,10 @@ API_ID = getenv("API_ID", "25742938")
 API_HASH = getenv("API_HASH", "b35b715fe8dc0a58e8048988286fc5b6")
 
 # Get your token from @BotFather on Telegram.
-BOT_TOKEN = getenv("8806982181:AAEZzP1on93KFtQbsGZ8CMkYoLFPR0Wrtg8")
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 # Get your mongo url from cloud.mongodb.com
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://lollolopp0900_db_user:xbaj05RPixvCXNMS@zero.rqsozug.mongodb.net/?appName=Zero")
+MONGO_DB_URI = getenv("MONGO_DB_URI")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 600))
 CODE_CREW_CHANNEL = "https://t.me/thecodecrew"
@@ -106,7 +106,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @StringFatherBot on Telegram
-STRING1 = getenv("STRING_SESSION", "BQGIzloAS3RWHNFQqxgn1YsQuTH7W-CkAkIlSWc4JwL8U9d7HoCakJNIX5E3w14zXE0TitLFS9UhfkcCxPPlr7QqU-qe4nv8AAkIf6vblhEZfgp3pwFXtBmEGqwfUFwI5I-qSWtWxhnj9y3hkiI1qiSdWUiP_5iVKHkpX0sll761665E_kAQR6BrfAXJyuCcBQKudlhsuqtgDIykXzZ-_rFHDa6pdJO-iXvAUhckRppYLz3iYeNhciTUpCk9ae91fukQP-9Rtj36DRV6AQWGVoBLJt-VoK7i9Ls2fHQrO7s9VpGDSeVLzTr58Ydp1I9-CH_4wfByJn9v6PP16yQYDjFq_msCeAAAAAIGzIVnAA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
