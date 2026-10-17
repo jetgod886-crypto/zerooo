@@ -1,15 +1,17 @@
-FROM python:3.10-slim
+FROM python:3.12-slim
+
+ENV PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    ffmpeg \
-    git \
+    ffmpeg git \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
+COPY requirements.txt .
+RUN pip install -U pip && pip install -r requirements.txt
+
 COPY . .
 
-RUN pip install -U pip uv
-RUN uv pip install --system .
-
-CMD ["AloneMusic"]
+CMD ["python3", "-m", "AloneMusic"]
