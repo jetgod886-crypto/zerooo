@@ -1,5 +1,3 @@
-
-
 import asyncio
 import os
 from random import randint
@@ -264,7 +262,6 @@ async def stream(
                 mystic=mystic,
             )
             asyncio.ensure_future(YouTube.prefetch(link, video=bool(video)))
-            asyncio.ensure_future(YouTube.warm(link))
             position = len(db.get(chat_id)) - 1
             button = aq_markup(_, chat_id)
             caption = _["queue_4"].format(position, title[:27], duration_min, user_name)
